@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+font-family: Big Shoulders Display;
+display: flex;
+color: white;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.box{
+    width: 327px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: 50%;
+    padding: 40px;
+}
+.box h1{
+line-height: 47.88px;    
+}
+.box p{
+    font-family: Lexend Deca;
+    line-height: 25px;
+    font-size: 15px;
+    font-weight: 400;
+}
+#first{
+    background-color: #E28625;
+    border-radius: 8px 0px 0px 8px;
+}
+#second{
+    background-color: #006971;
+}
+#third{
+    background-color: #004140;
+    border-radius: 0px 0px 8px 8px;
+}
+button{
+    border-radius: 25px;
+    width: 146px;
+    height: 48px;
+    border: none;
+}
+button:hover{
+    border: solid thin white;
+    background-color: transparent;
+}
+#first button{
+    color:#E28625 ;
+}
+#first button:hover{
+    color: white;
+}
+#second button{
+    color: #006971;
+}
+#second button:hover{
+    color: white;
+
+}
+#third button{
+    color: #004140;
+}
+#third button:hover{
+    color: white;
+}
+
+.box button{
+    font-family: Lexend Deca;
+    line-height: 25px;
+    font-size: 15px;
+    font-weight: 400;
+}
+@media screen and (min-width:321px){
+    body{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .box{
+        width: 327px;
+        height: 442px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        gap: 10%;
+        padding: 40px;
+    }   
+    #third{
+        border-radius: 0px 8px 8px 0px;
+    }
+
+}
